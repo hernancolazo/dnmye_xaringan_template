@@ -18,11 +18,36 @@ output:
 
 
 
+```{r, echo=FALSE}
+library(xaringanExtra)
+
+# LOGO COLOR EN PAGs INTERNAS
+xaringanExtra::use_logo(image_url = "imgs/escudo_mintur_color.png", 
+                        position = css_position(top = "1em", right = "1em"))
+
+# BARRA DE PROGRESO DE PRESENTACION
+xaringanExtra::use_progress_bar(color = comunicacion::dnmye_colores("amarillo"))
+
+# LAPIZ 
+xaringanExtra::use_scribble()
+
+# EXPLORADOR DE SLIDES
+xaringanExtra::use_tile_view()
+
+# HABILITAR WEBCAM
+xaringanExtra::use_webcam()
+
+
+```
+
+
 
 
 ```{r dnmye_theme, include=FALSE, warning=FALSE}
 
 library(xaringanthemer)
+library(comunicacion)
+
 
 style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                  # FONTS
@@ -30,8 +55,11 @@ style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                   text_font_google   = google_font("Roboto"),
                   code_font_google   = google_font("IBM Plex Mono"),
                  # COLORES 
-                 base_color = comunicacion::dnmye_colores("celeste"),
-                 code_inline_color = comunicacion::dnmye_colores("rojo")
+                 base_color = dnmye_colores("celeste"),
+                 code_inline_color = dnmye_colores("rojo"), 
+                 title_slide_background_image = "imgs/escudo_mintur_blanco.png", 
+                 title_slide_background_position = "95% 5%", 
+                 title_slide_background_size = "200px"
                   
                  )
 
