@@ -84,9 +84,11 @@ style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                  # COLORES 
                  base_color = dnmye_colores("celeste"),
                  code_inline_color = dnmye_colores("rojo"), 
+                 inverse_link_color = "#3B4449",
+                 background_color = "#FFFFFF",
                  title_slide_background_image = "imgs/escudo_mintur_blanco.png", 
                  title_slide_background_position = "95% 5%", 
-                 title_slide_background_size = "200px"
+                 title_slide_background_size = "200px", footnote_color = "#3B4449", link_color = "3B4449",text_slide_number_font_size = "16px"
                   
                  )
 
@@ -158,10 +160,8 @@ name: colores
 ---
 
 
-<br>
-<br>
-
-# TITULO DESTACADO o SEPARADORES  `#`
+# TITULO DESTACADO o 
+#SEPARADORES A DOS LINEAS  `#`
 
 ## TITULO DE FILMINA `##`
 
@@ -182,13 +182,14 @@ class: inverse center middle
 ```
 class: inverse center middle
 ```
-
+UN [LINK]()
 ---
-
+<br>
 
 ## Bloques
 
 ---
+<br>
 
 ### Citas
 
@@ -197,6 +198,7 @@ class: inverse center middle
 >  **Autor Importante (2022)**
 
 ---
+<br>
 
 ### Bloques de código
 
@@ -211,6 +213,7 @@ ggplot(gapminder) +
 
 
 ---
+<br>
 
 ### + código R 
 
@@ -219,6 +222,11 @@ dplyr::starwars %>% dplyr::slice_sample(n = 4)
 ```
 
 ---
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ```{r message=TRUE}
 cli::cli_alert_success("Funciona!")
@@ -244,23 +252,35 @@ stop("Falló! Arreglame!!!")
 
 
 ---
-
+<br>
 
 ## Tablas
 
 ---
+<br>
+<br>
+<br>
+<br>
 
 ```{r}
 tibble::as_tibble(mtcars)
 ```
 
 ---
+<br>
+<br>
+<br>
+<br>
 
 ```{r}
 knitr::kable(head(mtcars), format = 'html')
 ```
 
 ---
+<br>
+<br>
+<br>
+<br>
 
 ```{r}
 DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
@@ -268,10 +288,13 @@ DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4
 
 ---
 
-
 ## Listas
 
 ---
+<br>
+<br>
+<br>
+<br>
 
 .pull-left[
 ####Lista sin ordenar:
@@ -336,6 +359,10 @@ DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4
 ## Plots
 
 ---
+<br>
+<br>
+<br>
+<br>
 
 ```{r plot-example}
 library(ggplot2)
@@ -343,14 +370,8 @@ library(ggplot2)
 ```
 
 ---
-
-```{r plot-example-themed}
-g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
-  ggtitle("A Plot About Cars")
-```
-
----
 layout: false
+
 
 ## Imagenes y notas al pie
 
@@ -360,6 +381,7 @@ layout: false
 
 
 ---
+
 
 ## 2 Img
 
