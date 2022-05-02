@@ -34,8 +34,7 @@ background-size: 30%
 <br>
 <br>
 
-#### Dirección Nacional de Mercados y Estadística
-#### Subsecretaría de Desarrollo Estratégico
+### Dirección Nacional de Mercados y Estadística<br>Subsecretaría de Desarrollo Estratégico
 
 
 
@@ -78,9 +77,9 @@ library(comunicacion)
 
 style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                  # FONTS
-                  header_font_google = google_font("Encode+Sans"),
-                  text_font_google   = google_font("Roboto"),
-                  code_font_google   = google_font("IBM Plex Mono"),
+                  header_font_google = google_font('Encode Sans'),
+                  text_font_google   = google_font('Roboto'),
+                  code_font_google   = google_font('IBM Plex Mono'),
                  # COLORES 
                  base_color = dnmye_colores("celeste"),
                  code_inline_color = dnmye_colores("rojo"), 
