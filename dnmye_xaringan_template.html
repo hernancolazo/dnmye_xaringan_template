@@ -215,10 +215,24 @@ UN [LINK]()
 
 
 ```r
-ggplot(gapminder) +
-  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
-  geom_point() +
-  facet_wrap(~year)
+datafile &lt;- system.file("toy_evyth.rds", package = "comunicacion")
+toy_evyth &lt;- readRDS(datafile)
+
+library(magrittr)
+toy_evyth %&gt;%
+ dplyr::mutate(region_destino = factor(region_destino,
+                                       labels = c("Ciudad de Buenos Aires",
+                                                  "Provincia de Buenos Aires - Partidos del GBA",
+                                                  "Provincia de Buenos Aires - Resto", "Centro",
+                                                  "Litoral",
+                                                  "Norte", "Cuyo", "Patagonia"))) %&gt;%
+ dplyr::group_by(anio, region_destino) %&gt;%
+ dplyr::summarise(cantidad_personas = sum(pondera)) %&gt;%
+ ggplot2::ggplot(ggplot2::aes(x = anio,
+                              y = cantidad_personas,
+                              fill = region_destino)) +
+ ggplot2::geom_col(position = ggplot2::position_dodge()) +
+ comunicacion::scale_fill_dnmye()-&gt; plot_evyth
 ```
 
 
@@ -442,8 +456,8 @@ knitr::kable(head(mtcars), format = 'html')
 DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
 ```
 
-<div id="htmlwidget-57e65316f980bcee2fcd" style="width:100%;height:auto;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-57e65316f980bcee2fcd">{"x":{"filter":"none","fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-d8d4c8a587d6bebb88ad" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d8d4c8a587d6bebb88ad">{"x":{"filter":"none","fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105],[3.9,3.9,3.85,3.08,3.15,2.76],[2.62,2.875,2.32,3.215,3.44,3.46],[16.46,17.02,18.61,19.44,17.02,20.22],[0,0,1,1,0,1],[1,1,1,0,0,0],[4,4,4,3,3,3],[4,4,1,1,2,1]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n      <th>drat<\/th>\n      <th>wt<\/th>\n      <th>qsec<\/th>\n      <th>vs<\/th>\n      <th>am<\/th>\n      <th>gear<\/th>\n      <th>carb<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 ---
 
@@ -525,8 +539,8 @@ DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4
 
 
 ```r
-library(ggplot2)
-(g &lt;- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
+plot_evyth +
+  ggplot2::theme_void()
 ```
 
 &lt;img src="dnmye_xaringan_template_files/figure-html/plot-example-1.png" width="100%" /&gt;
