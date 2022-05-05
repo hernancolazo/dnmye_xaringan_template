@@ -27,7 +27,10 @@ Armar template Institucionales que ya tengan incluidos el manual de marca (tipog
 
 -   En este repositorio se usaron los siguientes paquetes :package:
 
-    -   
+    - `xaringan`
+    - `xaringanthemer` 
+    - `xaringaExtra`
+    - `comunicacion`
     
    
 
