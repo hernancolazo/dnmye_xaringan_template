@@ -12,18 +12,12 @@ Armar template Institucionales que ya tengan incluidos el manual de marca (tipog
 + Hacerlas de formas más dinámica
 
 
-## Contenidos :test_tube:
-
-**Detalle del contenido y enlaces necesarios**
-
-:pushpin:
-
-:pushpin: 
-
 
 ## Cómo usar el contenido :page_facing_up:
 
-**Ejemplo de uso ejecutable y claro**
+1. Utilizar `dnmye_xaringan_template.Rmd` para armar una presentación.
+
+2. Apretar `knit` (`Ctrl + Shift + K`) para generar archivo `html` renderizado. 
 
 -   En este repositorio se usaron los siguientes paquetes :package:
 
