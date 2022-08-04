@@ -52,7 +52,7 @@ xaringanExtra::use_logo(image_url = "imgs/escudo_mintur_color.png",
                         height = "20%", width = "20%")
 
 # BARRA DE PROGRESO DE PRESENTACION
-xaringanExtra::use_progress_bar(color = comunicacion::dnmye_colores("celeste"))
+xaringanExtra::use_progress_bar(color = comunicacion::dnmye_colores("cian"))
 
 # LAPIZ 
 xaringanExtra::use_scribble()
@@ -81,8 +81,8 @@ style_mono_light(outfile = "dnmye_theme.css", # CSS FILE
                   text_font_google   = google_font('Roboto'),
                   code_font_google   = google_font('IBM Plex Mono'),
                  # COLORES 
-                 base_color = dnmye_colores("celeste"),
-                 code_inline_color = dnmye_colores("rojo"), 
+                 base_color = dnmye_colores("cian"),
+                 code_inline_color = dnmye_colores("rosa"), 
                  inverse_link_color = "#3B4449",
                  background_color = "#FFFFFF",
                  title_slide_background_image = "imgs/escudo_mintur_blanco.png", 
