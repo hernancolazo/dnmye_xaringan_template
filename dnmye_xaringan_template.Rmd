@@ -42,7 +42,7 @@ background-size: 30%
 
 
 
-```{r, echo=FALSE}
+```{r echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
 library(xaringanExtra)
 
 # LOGO COLOR EN PAGs INTERNAS
@@ -112,10 +112,15 @@ knitr::opts_chunk$set(
 )
 ```
 
+---
+layout: true
+
+<div class="my-footer"><span>DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA <a href="https://yvera.tur.ar/sinta"> - <b>www.yvera.tur.ar/sinta</a></b></span></div> 
 
 ---
 
 ![](imgs/roceta_1.png)
+
 ---
 
 ![](imgs/roceta_2.png)
@@ -140,31 +145,37 @@ class: inverse center middle
 
 ---
 ![](imgs/sinta1.png)
+<br>
 .footnote[https://www.yvera.tur.ar/sinta/informe]
-
 ---
 ![](imgs/sinta2.png)
+<br>
 .footnote[https://www.yvera.tur.ar/sinta/informe/info/cuenta-satelite-de-turismo]
 ---
 ![](imgs/sinta3.png)
+<br>
 .footnote[https://armonizacion.yvera.tur.ar/]
 ---
 ![](imgs/sinta4.png)
+<br>
 .footnote[https://datos.yvera.gob.ar/]
 ---
 ![](imgs/sinta5.png)
+<br>
 .footnote[https://tableros.yvera.tur.ar/]
 ---
 ![](imgs/sinta6.png)
+<br>
 .footnote[https://biblioteca.yvera.tur.ar/]
 ---
 ![](imgs/sinta7.png)
+<br>
 .footnote[https://bitacora.yvera.tur.ar/]
 ---
 ![](imgs/sinta8.png)
+<br>
 .footnote[https://calendario.yvera.tur.ar/]
 ---
-
 class:  center, middle
 
 # DNMyE
