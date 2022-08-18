@@ -112,11 +112,6 @@ knitr::opts_chunk$set(
 )
 ```
 
----
-
-layout: true
-
-<div class="my-footer"><span>DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA <a href="https://yvera.tur.ar/sinta"> - <b>www.yvera.tur.ar/sinta</a></b></span></div> 
 
 ---
 
@@ -145,23 +140,31 @@ class: inverse center middle
 
 ---
 ![](imgs/sinta1.png)
-
+.footnote[https://www.yvera.tur.ar/sinta/informe]
 
 ---
 ![](imgs/sinta2.png)
+.footnote[https://www.yvera.tur.ar/sinta/informe/info/cuenta-satelite-de-turismo]
 ---
 ![](imgs/sinta3.png)
+.footnote[https://armonizacion.yvera.tur.ar/]
 ---
 ![](imgs/sinta4.png)
+.footnote[https://datos.yvera.gob.ar/]
 ---
 ![](imgs/sinta5.png)
+.footnote[https://tableros.yvera.tur.ar/]
 ---
 ![](imgs/sinta6.png)
+.footnote[https://biblioteca.yvera.tur.ar/]
 ---
 ![](imgs/sinta7.png)
+.footnote[https://bitacora.yvera.tur.ar/]
 ---
 ![](imgs/sinta8.png)
+.footnote[https://calendario.yvera.tur.ar/]
 ---
+
 class:  center, middle
 
 # DNMyE
