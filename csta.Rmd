@@ -1,5 +1,5 @@
 ---
-title: "SINTA"
+title: "CST-A"
 author:  "Dirección Nacional de Mercados y Estadística"
 output:
   xaringan::moon_reader:
@@ -19,8 +19,8 @@ background-image: url(imgs/escudo_mintur_blanco.png)
 background-position: 95% 95%
 background-size: 30%
 
-# SINTA
-### Sistema de Información Turística de la Argentina
+# CST-A
+### Cuenta Satélite de Turismo de la Argentina
 
 <br>
 <br>
@@ -119,24 +119,42 @@ layout: true
 
 ---
 
-![](imgs/roceta_1.png)
+![](imgs/CST-A-000.png)
 
 ---
 
-![](imgs/roceta_2.png)
+![](imgs/CST-A-01.png)
 ---
 
-![](imgs/roceta_3.png)
+![](imgs/CST-A-02.png)
 
 ---
 
-![](imgs/roceta_4.png)
+![](imgs/CST-A-03.png)
 ---
 
-![](imgs/roceta_5.png)
-
+![](imgs/CST-A-04.png)
 
 ---
+
+![](imgs/CST-A-05.png)
+---
+
+![](imgs/CST-A-06.png)
+---
+
+![](imgs/CST-A-07.png)
+---
+
+![](imgs/CST-A-08.png)
+---
+
+![](imgs/CST-A-09.png)
+---
+
+![](imgs/CST-A-10.png)
+---
+
 class: inverse center middle
 
 # QUE ENCONTRAMOS 
